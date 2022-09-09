@@ -309,3 +309,8 @@ button:focus {
 50% {background-position: 100% 50%}
 100% {background-position: 0% 50%}
 }
+hr {
+  height:5px;
+  border-width:0;
+  background-color:#ff8800;
+}
