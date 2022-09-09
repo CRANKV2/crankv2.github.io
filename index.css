@@ -73,9 +73,9 @@ body,html {
 #middle {
     width:100%;
     height:80vh;
-    padding:10vh 0px;
+    padding:4% 10%;
     text-align:center;
-    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url("https://imgur.com/a/cMRq4OY") center center fixed;
+    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url("https://i.imgur.com/b0hpHXC.jpeg") center center fixed;
     background-size:100% auto;
     background-repeat:no-repeat;
     color:red;
