@@ -6,7 +6,6 @@ body,html {
     color:#fff;
     background:rgb(0, 0, 0);
     scroll-behavior: smooth;
-    overflow-y: scroll;
 }
 
 #loading {
