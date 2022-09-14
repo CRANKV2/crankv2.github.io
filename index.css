@@ -1,12 +1,12 @@
 body,html {
     padding:0px;
     margin:0px;
-    overflow-y: auto;
     font-family: 'Comfortaa', cursive;
     font-weight:bold;
     color:#fff;
     background:rgb(0, 0, 0);
     scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 #loading {
