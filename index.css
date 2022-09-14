@@ -1,6 +1,7 @@
 body,html {
     padding:0px;
     margin:0px;
+    overflow-y: scroll;
     font-family: 'Comfortaa', cursive;
     font-weight:bold;
     color:#fff;
