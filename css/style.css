@@ -86,6 +86,8 @@ background-color: transparent; /* Set the background to transparent */
   color: var(--cl-gold);
   padding-top: 40px; /* Add some padding at the top of the header content */
 letter-spacing: 1px;
+font-weight: bold; /* Add the bold font weight */
+text-align: center; /* Center the text horizontally */
 }
 
 /* Style the main text */
@@ -93,6 +95,8 @@ letter-spacing: 1px;
   color: var(--cl-gold);
 padding-top: 40px; /* Add some padding at the top of the header content */
 letter-spacing: 1px;
+font-weight: bold; /* Add the bold font weight */
+text-align: center; /* Center the text horizontally */
 }
 
 .header_content p {
@@ -100,7 +104,19 @@ letter-spacing: 1px;
   color: var(--cl-gold);
   line-height: 1.8em;
   padding-top: 40px; /* Add some padding at the top of the header content */
+font-weight: bold; /* Add the bold font weight */
+text-align: center; /* Center the text horizontally */
 }
+
+/* Add a new line after a period in the main text */
+.header_content h2::after,
+.header_content h3::after,
+.header_content p::after {
+  content: ".\A"; /* Add a new line after the period */
+  white-space: pre; /* Preserve the line breaks */
+}
+
+
 .btn-readMore {
   display: inline-block;
   font-size: 1.3em;
@@ -113,6 +129,7 @@ letter-spacing: 1px;
   letter-spacing: 1px;
   transition: 0.5s;
   box-shadow: 0 0 10px 5px var(--cl-gold); /* Add the gold shadow */
+border-radius: 20px; /* Adjust the value to round the button corners */
 }
 .btn-readMore:hover {
   background-color: var(--cl-gold);
@@ -172,12 +189,13 @@ letter-spacing: 1px;
   height: 80%;
   object-fit: cover;
   box-shadow: 0 0 10px 5px var(--cl-gold); /* Add the gold shadow */
+border-radius: 15px; /* Adjust the value to round the button corners */
 }
 
 /* Style the logo icon */
 .logo_icon img {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
 }
 
 
