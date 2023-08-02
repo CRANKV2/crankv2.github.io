@@ -87,6 +87,7 @@ body {
 /* Style the main text */
 .header_content h3 {
   color: var(--cl-gold);
+  margin-top: 20px;
 }
 
 .header_content p {
