@@ -84,19 +84,22 @@ background-color: transparent; /* Set the background to transparent */
 .header_content h2 {
   font-size: 4em;
   color: var(--cl-gold);
-  padding-top: 20px; /* Add some padding at the top of the header content */
+  padding-top: 40px; /* Add some padding at the top of the header content */
+letter-spacing: 1px;
 }
 
 /* Style the main text */
 .header_content h3 {
   color: var(--cl-gold);
-padding-top: 20px; /* Add some padding at the top of the header content */
+padding-top: 40px; /* Add some padding at the top of the header content */
+letter-spacing: 1px;
 }
 
 .header_content p {
   font-size: 1.2em;
   color: var(--cl-gold);
   line-height: 1.8em;
+  padding-top: 40px; /* Add some padding at the top of the header content */
 }
 .btn-readMore {
   display: inline-block;
@@ -109,6 +112,7 @@ padding-top: 20px; /* Add some padding at the top of the header content */
   padding: 10px 30px;
   letter-spacing: 1px;
   transition: 0.5s;
+  box-shadow: 0 0 10px 5px var(--cl-gold); /* Add the gold shadow */
 }
 .btn-readMore:hover {
   background-color: var(--cl-gold);
@@ -153,7 +157,6 @@ padding-top: 20px; /* Add some padding at the top of the header content */
   height: 140px; /* Reduce the height by 30% */
   margin: 30px; /* Adjust the margin as needed for spacing between images */
   background-color: transparent; /* Set the background color to transparent */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Increase the box shadow */
 }
 
 
@@ -168,13 +171,13 @@ padding-top: 20px; /* Add some padding at the top of the header content */
   width: 80%;
   height: 80%;
   object-fit: cover;
+  box-shadow: 0 0 10px 5px var(--cl-gold); /* Add the gold shadow */
 }
 
 /* Style the logo icon */
 .logo_icon img {
-  width: 100px;
-  height: 100px;
-  box-shadow: 0 0 10px 5px var(--cl-gold); /* Add the gold shadow */
+  width: 80px;
+  height: 80px;
 }
 
 
@@ -193,7 +196,6 @@ padding-top: 20px; /* Add some padding at the top of the header content */
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 20px; /* Add some margin at the bottom of the logo container */
 }
 
 .navbar-text {
@@ -219,6 +221,15 @@ padding-top: 20px; /* Add some padding at the top of the header content */
   background-color: transparent; /* Set the background color to transparent */
     animation: zoomInOut 20s infinite alternate; /* Add the zoom animation */
 }
+
+
+
+
+.space-div {
+  height: 20px; /* Set the space height */
+}
+
+
 
 /* Scrolling animation */
 @keyframes moveUp {
@@ -262,9 +273,9 @@ padding-top: 20px; /* Add some padding at the top of the header content */
 
 /* CSS animation for slow movement */
 @keyframes slowMovement {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% { transform: translateY(10); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(10); }
 }
 
 
@@ -280,5 +291,5 @@ padding-top: 20px; /* Add some padding at the top of the header content */
 
 
 .library-box img {
-  animation: slowMovement 4s infinite;
+  animation: slowMovement 2s infinite;
 }
