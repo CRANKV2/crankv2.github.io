@@ -32,9 +32,7 @@ body {
   height: 100vh;
 }
 
-.header .header_banner:last-child {
-  background: var(--cl-black);
-}
+
 
 /* --header --header_intro */
 .header .header_intro {
