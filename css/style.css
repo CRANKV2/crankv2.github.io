@@ -34,7 +34,7 @@ background-color: transparent; /* Set the background to transparent */
 }
 
 .header .header_banner:last-child {
-  background: var(--cl-black);
+  background-color: transparent; /* Set the background color to transparent */
 }
 
 /* --header --header_intro */
