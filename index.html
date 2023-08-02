@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>STRP Magisk Modules</title>
   </head>
+  <script>
+  function explodeEffect(image) {
+    // Add the 'explode' class to the clicked image
+    image.classList.add('explode');
+
+    // Remove the 'explode' class after a short delay (e.g., 1 second)
+    setTimeout(() => {
+      image.classList.remove('explode');
+    }, 1000);
+  }
+</script>
   <body>
     <section class="header">
       <div class="header_banner header_intro">
@@ -43,15 +54,15 @@
 
       <div class="header_banner header_library">
   <figure class="library-box">
-    <a href="https://www.pling.com/p/1778931/"><img class="" src="./img/Stratosphere-Performance.png" alt="" /></a>
+    <a href="https://www.pling.com/p/1778931/" onclick="explodeEffect(this)"><img class="" src="./img/Stratosphere-Performance.png" alt="" /></a>
   </figure>
 
   <figure class="library-box">
-    <a href="https://www.pling.com/p/1795477/"><img class="" src="./img/STRP-BAG.png" alt="" /></a>
+    <a href="https://www.pling.com/p/1795477/" onclick="explodeEffect(this)"><img class="" src="./img/STRP-BAG.png" alt="" /></a>
   </figure>
   
   <figure class="library-box">
-    <a href="https://www.pling.com/p/2068024/"><img class="" src="./img/STRP-MTK.png" alt="" /></a>
+    <a href="https://www.pling.com/p/2068024/" onclick="explodeEffect(this)"><img class="" src="./img/STRP-MTK.png" alt="" /></a>
   </figure>
       </div>
     </section>
