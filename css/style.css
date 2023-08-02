@@ -241,7 +241,7 @@ border-radius: 15px; /* Adjust the value to round the button corners */
   background-position: center;
   z-index: -1; /* Set a negative z-index to make sure the background stays behind the header content */
   background-color: transparent; /* Set the background color to transparent */
-    animation: zoomInOut 20s infinite alternate; /* Add the zoom animation */
+    animation: zoomInOut 20s; /* Add the zoom animation */
 }
 
 
