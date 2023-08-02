@@ -171,49 +171,41 @@ body {
   display: none;
 }
 
-/* Hide the menu by default */
-#menu {
-  display: none;
+
+
+
+
+/* Style the menu sidebar */
+.menu-sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Start offscreen */
+  width: 250px; /* Set the width of the sidebar */
+  height: 100vh; /* Set the height to cover the entire viewport */
+  background-color: var(--cl-gold);
+  color: black;
+  padding: 20px;
+  z-index: 999; /* Set a higher z-index to make sure it appears on top */
+  transition: right 0.3s;
 }
 
-/* Style the menu icon */
-.menu_icon {
-  display: block;
-  background-color: black;
-  color: var(--cl-gold);
-  font-size: 30px;
-  width: 40px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  transition: transform 0.3s; /* Add a transition for the rotation effect */
+/* Adjust the font size and styles as needed */
+.menu_sidebar li {
+  font-size: 18px;
+  font-weight: bold;
+  list-style: none;
+  padding: 8px 0;
 }
 
-/* Style the expanded menu */
-#menu.expanded {
-  display: block;
+/* Style the content area */
+.content {
+  margin-left: 20px; /* Adjust the margin to create space for the menu */
+  transition: margin-left 0.3s;
 }
 
-/* Position the menu container */
-.menu-container {
-  position: relative;
-}
-
-/* Slide-in effect */
-#menu.slide-in {
-  position: absolute;
-  top: 40px; /* Adjust the distance from the menu button */
-  right: 0;
-  background-color: black;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for depth */
-  transform-origin: top right;
-  transform: scale(0); /* Start hidden */
-  transition: transform 0.3s;
+/* Adjust the content area when the menu is open */
+.menu-open .content {
+  margin-left: 250px; /* Match the width of the menu sidebar */
 }
 
 /* ______________responsive______________ */
