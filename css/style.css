@@ -33,6 +33,10 @@ body {
   height: 100vh;
 }
 
+.header .header_banner:last-child {
+  background: var(--cl-black);
+}
+
 /* --header --header_intro */
 .header .header_intro {
   display: flex;
@@ -210,7 +214,8 @@ body {
   background-position: center;
   z-index: -1; /* Set a negative z-index to make sure the background stays behind the header content */
   opacity: 0.8; /* Adjust the opacity as desired */
-  animation: moveUp 10s infinite alternate; /* Add the scrolling animation */
+    animation: zoomInOut 30s infinite alternate; /* Add the zoom animation */
+}
 }
 
 /* Scrolling animation */
@@ -259,6 +264,18 @@ body {
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
 }
+
+
+/* Zoom animation */
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1); /* Normal size at the beginning and end */
+  }
+  50% {
+    transform: scale(1.1); /* Zoomed-in size at the midpoint */
+  }
+}
+
 
 .library-box img {
   animation: slowMovement 4s infinite;
