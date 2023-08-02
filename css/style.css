@@ -116,6 +116,7 @@ body {
 /* --header --header_intro --header-socialIcon */
 .header_socialIcons {
   position: absolute;
+  margin-top: 20px;
   bottom: 20px;
   right: 30px;
   display: flex;
