@@ -166,13 +166,19 @@ body {
   height: 100px;
 }
 
-/* CSS transition for click effect (explosion-like effect) */
-.library-box img {
-  transition: transform 0.5s;
+/* Hide the menu by default */
+.header_navbar-menu {
+  display: none;
 }
 
-.explode {
-  transform: scale(1.5);
+/* Style the menu icon */
+.menu_icon {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--cl-gold);
+  cursor: pointer;
 }
 
 /* ______________responsive______________ */
