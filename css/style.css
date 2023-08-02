@@ -150,9 +150,9 @@ background-color: transparent; /* Set the background to transparent */
   position: relative;
   width: 140px; /* Reduce the width by 30% */
   height: 140px; /* Reduce the height by 30% */
-  margin: 20px; /* Adjust the margin as needed for spacing between images */
-  background-color: #444; /* Set the desired background color */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Increase the box shadow */
+  margin: 30px; /* Adjust the margin as needed for spacing between images */
+  background-color: transparent; /* Set the background color to transparent */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Increase the box shadow */
 }
 
 
@@ -173,6 +173,7 @@ background-color: transparent; /* Set the background to transparent */
 .logo_icon img {
   width: 100px;
   height: 100px;
+  box-shadow: 0 0 10px 5px var(--cl-gold); /* Add the gold shadow */
 }
 
 
