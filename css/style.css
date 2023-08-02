@@ -118,7 +118,7 @@ text-align: center; /* Center the text horizontally */
 
 
 .btn-readMore {
-  display: inline-block;
+  display: flex;
   font-size: 1.3em;
   margin-top: 20px;
   color: var(--cl-gold);
@@ -129,8 +129,13 @@ text-align: center; /* Center the text horizontally */
   letter-spacing: 1px;
   transition: 0.5s;
   box-shadow: 0 0 10px 5px var(--cl-gold); /* Add the gold shadow */
-border-radius: 20px; /* Adjust the value to round the button corners */
+  border-radius: 20px; /* Adjust the value to round the button corners */
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Adjust the padding as needed */
+  padding-bottom: 20px; /* Add padding to the bottom */
 }
+
 .btn-readMore:hover {
   background-color: var(--cl-gold);
   color: var(--cl-white);
