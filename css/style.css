@@ -174,11 +174,16 @@ body {
 /* Style the menu icon */
 .menu_icon {
   display: block;
-  background: none;
+  background-color: black; /* Set the background color to black */
+  color: var(--cl-gold); /* Set the lines color to gold */
+  font-size: 30px; /* Increase the font size to make it bigger */
+  width: 45px; /* Set a width to make it easier to click */
+  height: 45px; /* Set a height to make it easier to click */
   border: none;
-  font-size: 24px;
-  color: var(--cl-gold);
   cursor: pointer;
+  text-align: center;
+  line-height: 40px; /* Vertically center the content */
+  border-radius: 50%; /* Make the button circular */
 }
 
 /* ______________responsive______________ */
