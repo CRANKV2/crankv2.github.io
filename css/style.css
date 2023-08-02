@@ -167,6 +167,15 @@ body {
 }
 
 
+/* Center the logo and navbar text */
+.logo-container {
+  text-align: center;
+}
+
+.navbar-text {
+  text-align: center;
+  margin-top: 10px; /* Adjust the margin as needed for spacing between logo and navbar text */
+}
 
 
 
