@@ -315,3 +315,36 @@ border-radius: 15px; /* Adjust the value to round the button corners */
 .library-box img {
   animation: slowMovement 2s infinite;
 }
+
+
+/* CSS for the splash screen */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Set a high z-index to ensure it appears above other elements */
+}
+
+.splash-screen img {
+  max-width: 100%;
+  max-height: 100%;
+  filter: blur(0); /* Adjust the blur value as needed */
+  animation: fadeIn 1s forwards; /* Add a fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: blur(10px); /* Adjust the blur value as needed */
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
