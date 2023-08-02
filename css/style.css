@@ -146,8 +146,8 @@ body {
 /* Style the image container */
 .header_library .library-box {
   position: relative;
-  width: 140px; /* Reduce the width by 20% */
-  height: 140px; /* Reduce the height by 20% */
+  width: 140px; /* Reduce the width by 30% */
+  height: 140px; /* Reduce the height by 30% */
   margin: 20px; /* Adjust the margin as needed for spacing between images */
   background-color: #444; /* Set the desired background color */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Increase the box shadow */
@@ -200,7 +200,30 @@ body {
 }
 
 
+/* Style the header background */
+.header_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/stars_background.png'); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Set a negative z-index to make sure the background stays behind the header content */
+  opacity: 0.8; /* Adjust the opacity as desired */
+  animation: moveUp 10s infinite alternate; /* Add the scrolling animation */
+}
 
+/* Scrolling animation */
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px); /* Adjust the value to control the amount of movement */
+  }
+}
 
 
 /* ______________responsive______________ */
