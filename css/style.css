@@ -19,6 +19,7 @@
 
 /* Set background and text color */
 body {
+background-color: transparent; /* Set the background to transparent */
   color: var(--cl-gold);
 }
 
@@ -32,7 +33,9 @@ body {
   height: 100vh;
 }
 
-
+.header .header_banner:last-child {
+  background: var(--cl-black);
+}
 
 /* --header --header_intro */
 .header .header_intro {
@@ -210,7 +213,7 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -1; /* Set a negative z-index to make sure the background stays behind the header content */
-  opacity: 0.8; /* Adjust the opacity as desired */
+  background-color: transparent; /* Set the background color to transparent */
     animation: zoomInOut 20s infinite alternate; /* Add the zoom animation */
 }
 
