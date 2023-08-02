@@ -6,19 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>STRP Magisk Modules</title>
+    <script src="js/menu.js"></script>
+        <title>STRP Magisk Modules</title>
   </head>
-<script>
-  function explodeEffect(image) {
-    // Add the 'explode' class to the clicked image
-    image.classList.add('explode');
-
-    // Remove the 'explode' class after a short delay (e.g., 1 second)
-    setTimeout(() => {
-      image.classList.remove('explode');
-    }, 1000);
-  }
-</script>
   <body>
     <section class="header">
       <div class="header_banner header_intro">
@@ -26,11 +16,12 @@
   <a href="https://t.me/AndroidRootModulesCommunity" class="logo_icon">
     <img src="./img/strp-logo-icon.png" alt="STRP Modules Logo" />
   </a>
-          <ul class="header_navbar-menu">
-            <li class="menu_item"><a href="https://t.me/AndroidRootModulesCommunity">Group</a></li>
-            <li class="menu_item"><a href="https://t.me/StratospherePerformance">Channel</a></li>
-          </ul>
-        </header>
+         <button class="menu_icon" onclick="toggleMenu()">☰</button>
+  <ul class="header_navbar-menu" id="menu">
+    <li class="menu_item"><a href="https://t.me/AndroidRootModulesCommunity">Group</a></li>
+    <li class="menu_item"><a href="https://t.me/StratospherePerformance">Channel</a></li>
+  </ul>
+</header>
         <div class="header_content">
           <h3>
             Discover and download a collection of powerful Magisk Modules right here! Enjoy an ad-free experience while exploring our curated selection of modules, carefully designed to enhance your Android device. Your support means the world to us – consider leaving a small donation to help us continue our hard work. Thank you for being part of our community!
@@ -54,15 +45,15 @@
 
       <div class="header_banner header_library">
   <figure class="library-box">
-    <a href="https://www.pling.com/p/1778931/" onclick="explodeEffect(this)"><img class="" src="./img/Stratosphere-Performance.png" alt="" /></a>
+    <a href="https://www.pling.com/p/1778931/"><img class="" src="./img/Stratosphere-Performance.png" alt="" /></a>
   </figure>
 
   <figure class="library-box">
-    <a href="https://www.pling.com/p/1795477/" onclick="explodeEffect(this)"><img class="" src="./img/STRP-BAG.png" alt="" /></a>
+    <a href="https://www.pling.com/p/1795477/"><img class="" src="./img/STRP-BAG.png" alt="" /></a>
   </figure>
   
   <figure class="library-box">
-    <a href="https://www.pling.com/p/2068024/" onclick="explodeEffect(this)"><img class="" src="./img/STRP-MTK.png" alt="" /></a>
+    <a href="https://www.pling.com/p/2068024/"><img class="" src="./img/STRP-MTK.png" alt="" /></a>
   </figure>
       </div>
     </section>
