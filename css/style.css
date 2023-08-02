@@ -16,6 +16,13 @@
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
 }
+
+/* Set background and text color */
+body {
+  background-color: var(--cl-black);
+  color: var(--cl-gold);
+}
+
 /* --header */
 .header {
   display: grid;
@@ -45,6 +52,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 60px;
+  color: var(--cl-gold);
   align-items: center;
 }
 .header_navbar .logo_name {
@@ -75,6 +83,12 @@
   font-size: 4em;
   color: var(--cl-gold);
 }
+
+/* Style the main text */
+.header_content h3 {
+  color: var(--cl-gold);
+}
+
 .header_content p {
   font-size: 1.2em;
   color: var(--cl-gold);
@@ -144,10 +158,14 @@
   object-fit: cover;
 }
 
+
+/* Style the logo icon */
 .logo_icon img {
   width: 100px;
   height: 100px;
 }
+
+
 
 /* ______________responsive______________ */
 
