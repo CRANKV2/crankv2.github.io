@@ -128,7 +128,7 @@ text-align: center; /* Center the text horizontally */
   padding: 10px 30px;
   letter-spacing: 1px;
   transition: 0.5s;
-  box-shadow: 0 0 4px 5px var(--cl-gold); /* Add the gold shadow */
+  box-shadow: 0 0 10px 2px var(--cl-gold); /* Add the gold shadow */
   border-radius: 50px; /* Adjust the value to round the button corners */
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
@@ -160,8 +160,8 @@ text-align: center; /* Center the text horizontally */
   margin-left: 20px;
 }
 .header_socialIcons .social-icon img {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 30px;
+  max-height: 30px;
 }
 
 /* --header --header_library */
@@ -189,10 +189,10 @@ text-align: center; /* Center the text horizontally */
   position: absolute;
   top: 0;
   left: 0;
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
   object-fit: cover;
-  box-shadow: 0 0 10px 5px var(--cl-gold); /* Add the gold shadow */
+  box-shadow: 0 0 10px 3px var(--cl-gold); /* Add the gold shadow */
 border-radius: 15px; /* Adjust the value to round the button corners */
 }
 
@@ -231,10 +231,10 @@ border-radius: 15px; /* Adjust the value to round the button corners */
 
 /* Apply the stars background to the body */
 body {
-  background-image: url('../img/stars_background.png'); /* Replace with the path to your background image */
+  background-color: black;
   background-size: cover;
   background-position: center;
-  animation: zoomInOut 20s infinite alternate;
+  animation: zoomInOut 30s infinite alternate;
 }
 
 
@@ -317,7 +317,6 @@ body {
 .show-splash .splash-screen img {
   max-width: 100%;
   max-height: 100%;
-  filter: blur(25px); /* Adjust the blur value as needed */
 }
 
 @keyframes fadeIn {
@@ -349,7 +348,7 @@ body {
 .no-splash .header_intro,
 .no-splash .header_socialIcons,
 .no-splash .header_library {
-  animation: fadeInContent 3s forwards;
+  animation: fadeInContent 1s forwards;
 }
 
 @keyframes fadeInContent {
