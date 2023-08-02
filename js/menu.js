@@ -1,12 +1,7 @@
   function toggleMenu() {
-    const menu = document.getElementById('menu');
-    const menuContainer = document.querySelector('.menu-container');
+    const menuSidebar = document.getElementById('menuSidebar');
+    const content = document.querySelector('.content');
 
-    if (menu.classList.contains('expanded')) {
-      menu.classList.remove('expanded');
-      menuContainer.classList.remove('slide-in');
-    } else {
-      menu.classList.add('expanded');
-      menuContainer.classList.add('slide-in');
-    }
+    menuSidebar.classList.toggle('menu-open');
+    content.classList.toggle('menu-open');
   }
