@@ -167,9 +167,12 @@ body {
 }
 
 /* CSS transition for click effect (explosion-like effect) */
+.library-box img {
+  transition: transform 0.5s;
+}
+
 .explode {
-  transform: scale(1.5); /* Adjust the scale factor to control the explosion size */
-  transition: transform 0.5s; /* Adjust the transition duration as needed */
+  transform: scale(1.5);
 }
 
 /* ______________responsive______________ */
@@ -201,7 +204,6 @@ body {
   }
 }
 
-
 /* CSS animation for slow movement */
 @keyframes slowMovement {
   0% { transform: translateY(0); }
@@ -210,5 +212,5 @@ body {
 }
 
 .library-box img {
-  animation: slowMovement 4s infinite; /* Adjust the duration and other properties as needed */
+  animation: slowMovement 4s infinite;
 }
