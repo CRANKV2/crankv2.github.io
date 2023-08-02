@@ -309,7 +309,7 @@ border-radius: 15px; /* Adjust the value to round the button corners */
 
 
 /* CSS for the splash screen */
-.splash-screen {
+.show-splash .splash-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -320,22 +320,44 @@ border-radius: 15px; /* Adjust the value to round the button corners */
   justify-content: center;
   align-items: center;
   z-index: 9999; /* Set a high z-index to ensure it appears above other elements */
+  animation: fadeIn 1s forwards; /* Add a fade-in animation */
 }
 
-.splash-screen img {
+.show-splash .splash-screen img {
   max-width: 100%;
   max-height: 100%;
-  filter: blur(0); /* Adjust the blur value as needed */
-  animation: fadeIn 1s forwards; /* Add a fade-in animation */
+  filter: blur(25px); /* Adjust the blur value as needed */
 }
 
 @keyframes fadeIn {
   from {
+    opacity: 1;
+    filter: blur(0);
+  }
+  to {
     opacity: 0;
-    filter: blur(20px); /* Adjust the blur value as needed */
+    filter: blur(25px); /* Adjust the blur value as needed */
+  }
+}
+
+/* Hide the splash screen after the animation */
+.no-splash .splash-screen {
+  display: none;
+}
+
+/* Show the website content after the splash screen animation */
+.no-splash .header,
+.no-splash .header_intro,
+.no-splash .header_socialIcons,
+.no-splash .header_library {
+  animation: fadeInContent 1s forwards;
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
   }
   to {
     opacity: 1;
-    filter: blur(0);
   }
 }
