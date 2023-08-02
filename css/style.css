@@ -229,22 +229,13 @@ border-radius: 15px; /* Adjust the value to round the button corners */
 }
 
 
-/* Style the header background */
-.header_background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/* Apply the stars background to the body */
+body {
   background-image: url('../img/stars_background.png'); /* Replace with the path to your background image */
   background-size: cover;
   background-position: center;
-  z-index: -1; /* Set a negative z-index to make sure the background stays behind the header content */
-  background-color: transparent; /* Set the background color to transparent */
-    animation: zoomInOut 20s; /* Add the zoom animation */
+  animation: zoomInOut 20s infinite alternate;
 }
-
-
 
 
 .space-div {
@@ -330,13 +321,21 @@ border-radius: 15px; /* Adjust the value to round the button corners */
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
+    opacity: 0;
+    filter: blur(20px); /* Adjust the blur value as needed */
+  }
+  20% {
     opacity: 1;
     filter: blur(0);
   }
-  to {
+  60% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
     opacity: 0;
-    filter: blur(25px); /* Adjust the blur value as needed */
+    filter: blur(20px); /* Adjust the blur value as needed */
   }
 }
 
@@ -350,7 +349,7 @@ border-radius: 15px; /* Adjust the value to round the button corners */
 .no-splash .header_intro,
 .no-splash .header_socialIcons,
 .no-splash .header_library {
-  animation: fadeInContent 1s forwards;
+  animation: fadeInContent 3s forwards;
 }
 
 @keyframes fadeInContent {
