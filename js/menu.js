@@ -1,4 +1,3 @@
-<script>
   function toggleMenu() {
     const menu = document.getElementById('menu');
     const menuContainer = document.querySelector('.menu-container');
@@ -11,4 +10,3 @@
       menuContainer.classList.add('slide-in');
     }
   }
-</script>
