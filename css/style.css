@@ -19,7 +19,6 @@
 
 /* Set background and text color */
 body {
-  background-color: var(--cl-black);
   color: var(--cl-gold);
 }
 
