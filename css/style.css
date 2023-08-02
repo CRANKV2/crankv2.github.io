@@ -84,12 +84,13 @@ background-color: transparent; /* Set the background to transparent */
 .header_content h2 {
   font-size: 4em;
   color: var(--cl-gold);
+  padding-top: 20px; /* Add some padding at the top of the header content */
 }
 
 /* Style the main text */
 .header_content h3 {
   color: var(--cl-gold);
-  margin-top: 20px;
+padding-top: 20px; /* Add some padding at the top of the header content */
 }
 
 .header_content p {
@@ -192,6 +193,7 @@ background-color: transparent; /* Set the background to transparent */
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 20px; /* Add some margin at the bottom of the logo container */
 }
 
 .navbar-text {
