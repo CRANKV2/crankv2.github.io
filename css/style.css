@@ -171,19 +171,49 @@ body {
   display: none;
 }
 
+/* Hide the menu by default */
+#menu {
+  display: none;
+}
+
 /* Style the menu icon */
 .menu_icon {
   display: block;
-  background-color: black; /* Set the background color to black */
-  color: var(--cl-gold); /* Set the lines color to gold */
-  font-size: 30px; /* Increase the font size to make it bigger */
-  width: 45px; /* Set a width to make it easier to click */
-  height: 45px; /* Set a height to make it easier to click */
+  background-color: black;
+  color: var(--cl-gold);
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
   border: none;
   cursor: pointer;
   text-align: center;
-  line-height: 40px; /* Vertically center the content */
-  border-radius: 50%; /* Make the button circular */
+  line-height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s; /* Add a transition for the rotation effect */
+}
+
+/* Style the expanded menu */
+#menu.expanded {
+  display: block;
+}
+
+/* Position the menu container */
+.menu-container {
+  position: relative;
+}
+
+/* Slide-in effect */
+#menu.slide-in {
+  position: absolute;
+  top: 40px; /* Adjust the distance from the menu button */
+  right: 0;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for depth */
+  transform-origin: top right;
+  transform: scale(0); /* Start hidden */
+  transition: transform 0.3s;
 }
 
 /* ______________responsive______________ */
