@@ -253,15 +253,6 @@ border-radius: 15px; /* Adjust the value to round the button corners */
 
 
 
-/* Scrolling animation */
-@keyframes moveUp {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-30px); /* Adjust the value to control the amount of movement */
-  }
-}
 
 
 /* ______________responsive______________ */
