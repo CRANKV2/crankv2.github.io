@@ -213,7 +213,6 @@ body {
   opacity: 0.8; /* Adjust the opacity as desired */
     animation: zoomInOut 20s infinite alternate; /* Add the zoom animation */
 }
-}
 
 /* Scrolling animation */
 @keyframes moveUp {
@@ -221,7 +220,7 @@ body {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-20px); /* Adjust the value to control the amount of movement */
+    transform: translateY(-30px); /* Adjust the value to control the amount of movement */
   }
 }
 
