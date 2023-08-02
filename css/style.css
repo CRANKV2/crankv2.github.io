@@ -171,38 +171,8 @@ body {
 
 
 
-/* Style the menu sidebar */
-.menu-sidebar {
-  position: fixed;
-  top: 0;
-  right: -250px; /* Start offscreen */
-  width: 250px; /* Set the width of the sidebar */
-  height: 100vh; /* Set the height to cover the entire viewport */
-  background-color: var(--cl-gold);
-  color: black;
-  padding: 20px;
-  z-index: 999; /* Set a higher z-index to make sure it appears on top */
-  transition: right 0.3s;
-}
 
-/* Adjust the font size and styles as needed */
-.menu_sidebar li {
-  font-size: 18px;
-  font-weight: bold;
-  list-style: none;
-  padding: 8px 0;
-}
 
-/* Style the content area */
-.content {
-  margin-left: 20px; /* Adjust the margin to create space for the menu */
-  transition: margin-left 0.3s;
-}
-
-/* Adjust the content area when the menu is open */
-.menu-open .content {
-  margin-left: 250px; /* Match the width of the menu sidebar */
-}
 
 /* ______________responsive______________ */
 
