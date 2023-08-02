@@ -317,34 +317,49 @@ border-radius: 15px; /* Adjust the value to round the button corners */
 }
 
 
-/* CSS for the splash screen */
+/* Style the splash screen */
 .splash-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999; /* Set a high z-index to ensure it appears above other elements */
+  background-image: url('../img/strp_splash_website.png'); /* Replace with the path to your splash image */
+  background-size: cover;
+  background-position: center;
+  z-index: 9999; /* Set a high z-index to make sure the splash screen appears on top */
+  opacity: 1; /* Start with full opacity */
+  animation: fadeOut 2s forwards, blurOut 2s forwards; /* Add fade-out and blur-out animations */
 }
 
-.splash-screen img {
-  max-width: 100%;
-  max-height: 100%;
-  filter: blur(0); /* Adjust the blur value as needed */
-  animation: fadeIn 1s forwards; /* Add a fade-in animation */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    filter: blur(10px); /* Adjust the blur value as needed */
-  }
-  to {
+/* Keyframes for fade-out animation */
+@keyframes fadeOut {
+  0% {
     opacity: 1;
-    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Keyframes for blur-out animation */
+@keyframes blurOut {
+  0% {
+    backdrop-filter: blur(0);
+  }
+  100% {
+    backdrop-filter: blur(10px); /* Adjust the blur intensity */
+  }
+}
+
+/* Apply styles for mobile devices */
+@media (max-width: 600px) {
+  .splash-screen {
+    /* Adjust the size of the splash screen for mobile devices */
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
