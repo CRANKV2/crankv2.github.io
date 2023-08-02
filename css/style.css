@@ -166,17 +166,11 @@ body {
   height: 100px;
 }
 
-/* CSS animation for slow movement */
-@keyframes slowMovement {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+/* CSS transition for click effect (explosion-like effect) */
+.explode {
+  transform: scale(1.5); /* Adjust the scale factor to control the explosion size */
+  transition: transform 0.5s; /* Adjust the transition duration as needed */
 }
-
-.library-box img {
-  animation: slowMovement 4s infinite; /* Adjust the duration and other properties as needed */
-}
-
 
 /* ______________responsive______________ */
 
@@ -205,4 +199,16 @@ body {
     width: 100%;
     height: 40vh;
   }
+}
+
+
+/* CSS animation for slow movement */
+@keyframes slowMovement {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.library-box img {
+  animation: slowMovement 4s infinite; /* Adjust the duration and other properties as needed */
 }
