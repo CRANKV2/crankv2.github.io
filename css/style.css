@@ -146,11 +146,11 @@ body {
 /* Style the image container */
 .header_library .library-box {
   position: relative;
-  width: 200px; /* Set the desired width for the image container */
-  height: 200px; /* Set the desired height for the image container */
+  width: 160px; /* Reduce the width by 20% */
+  height: 160px; /* Reduce the height by 20% */
   margin: 10px; /* Adjust the margin as needed for spacing between images */
   background-color: #444; /* Set the desired background color */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a box shadow for a 3D effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Increase the box shadow */
 }
 
 
@@ -181,7 +181,6 @@ body {
   height: 100%;
   object-fit: cover; /* Make the image fit inside the container without distortion */
 }
-
 
 
 /* Center the logo and navbar text */
