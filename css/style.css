@@ -214,7 +214,7 @@ body {
   background-position: center;
   z-index: -1; /* Set a negative z-index to make sure the background stays behind the header content */
   opacity: 0.8; /* Adjust the opacity as desired */
-    animation: zoomInOut 30s infinite alternate; /* Add the zoom animation */
+    animation: zoomInOut 20s infinite alternate; /* Add the zoom animation */
 }
 }
 
