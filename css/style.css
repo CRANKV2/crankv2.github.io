@@ -160,13 +160,22 @@ body {
   object-fit: cover;
 }
 
-
 /* Style the logo icon */
 .logo_icon img {
   width: 100px;
   height: 100px;
 }
 
+/* CSS animation for slow movement */
+@keyframes slowMovement {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.library-box img {
+  animation: slowMovement 4s infinite; /* Adjust the duration and other properties as needed */
+}
 
 
 /* ______________responsive______________ */
