@@ -288,7 +288,7 @@ body {
   0%, 100% {
     transform: scale(1); /* Normal size at the beginning and end */
   }
-  50% {
+  10% {
     transform: scale(1.1); /* Zoomed-in size at the midpoint */
   }
 }
