@@ -189,8 +189,8 @@ text-align: center; /* Center the text horizontally */
   position: absolute;
   top: 0;
   left: 0;
-  width: 60%;
-  height: 60%;
+  width: 40%;
+  height: 40%;
   object-fit: cover;
   box-shadow: 0 0 10px 3px var(--cl-gold); /* Add the gold shadow */
 border-radius: 15px; /* Adjust the value to round the button corners */
@@ -311,19 +311,19 @@ body {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    filter: blur(20px); /* Adjust the blur value as needed */
+    filter: blur(25px); /* Adjust the blur value as needed */
   }
   20% {
     opacity: 1;
     filter: blur(0);
   }
-  60% {
+  70% {
     opacity: 1;
     filter: blur(0);
   }
-  100% {
+  80% {
     opacity: 0;
-    filter: blur(20px); /* Adjust the blur value as needed */
+    filter: blur(25px); /* Adjust the blur value as needed */
   }
 }
 
