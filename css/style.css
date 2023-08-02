@@ -144,6 +144,11 @@
   object-fit: cover;
 }
 
+.logo_icon img {
+  width: 100px;
+  height: 100px;
+}
+
 /* ______________responsive______________ */
 
 @media (max-width: 991px) {
