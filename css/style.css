@@ -234,7 +234,6 @@ body {
   background-color: black;
   background-size: cover;
   background-position: center;
-  animation: zoomInOut 30s infinite alternate;
 }
 
 
@@ -282,16 +281,6 @@ body {
   100% { transform: translateY(10); }
 }
 
-
-/* Zoom animation */
-@keyframes zoomInOut {
-  0%, 100% {
-    transform: scale(1); /* Normal size at the beginning and end */
-  }
-  10% {
-    transform: scale(1.1); /* Zoomed-in size at the midpoint */
-  }
-}
 
 
 .library-box img {
