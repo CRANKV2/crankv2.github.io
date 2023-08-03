@@ -288,7 +288,7 @@ body {
 }
 
 
-/* CSS for the splash screen */
+/* CSS for the new splash screen */
 .show-splash .splash-screen {
   position: fixed;
   top: 0;
@@ -300,28 +300,23 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 9999; /* Set a high z-index to ensure it appears above other elements */
-  animation: fadeIn 1s forwards; /* Add a fade-in animation */
+  animation: fadeInOut 4s forwards; /* Add a fade-in-out animation with a total duration of 4 seconds */
 }
 
-.show-splash .splash-screen img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-@keyframes fadeIn {
+@keyframes fadeInOut {
   0% {
     opacity: 0;
     filter: blur(25px); /* Adjust the blur value as needed */
   }
-  20% {
+  25% {
     opacity: 1;
     filter: blur(0);
   }
-  70% {
+  75% {
     opacity: 1;
     filter: blur(0);
   }
-  80% {
+  100% {
     opacity: 0;
     filter: blur(25px); /* Adjust the blur value as needed */
   }
