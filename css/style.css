@@ -349,3 +349,41 @@ body {
     opacity: 1;
   }
 }
+
+.image-container {
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.text-container h3 {
+  color: transparent;
+  background-image: linear-gradient(to bottom, var(--cl-gold) 0%, transparent 85%, transparent 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.text-container {
+  animation: fadeBlur 2s infinite;
+}
+
+@keyframes fadeBlur {
+  0%, 100% {
+    opacity: 0;
+    text-shadow: 0 0 10px var(--cl-gold);
+    filter: blur(10px);
+  }
+  80% {
+    opacity: 1;
+    text-shadow: none;
+    filter: blur(0);
+  }
+}
