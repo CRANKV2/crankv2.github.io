@@ -8,6 +8,53 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/functions.js"></script>
         <title>STRP Magisk Modules</title>
+    <script>
+    if (window.location.hash) {
+      var hash = window.location.hash.slice(1).toUpperCase(); // Remove the '#' from the hash
+      
+      var redirects = {
+        "STRATOSPHERE": "https://www.pling.com/p/1778931/",
+        "STRP-BAG": "https://www.pling.com/p/1795477/",
+        "STRP-MTK": "https://www.pling.com/p/2068024/",
+        "STRP-ULTRA-BATTERY": "https://www.pling.com/p/1864374/",
+        "STRP-DETACH": "https://www.pling.com/p/1979596/",
+        "STRP-RAMM": "https://www.pling.com/p/1838785/",
+        "STRP-AUTO-BOOST": "https://www.pling.com/p/1963746/",
+        "STRP-FORCE-CLOSE": "https://www.pling.com/p/1961732/",
+        "STRP-SQL": "https://www.pling.com/p/1957282/",
+        "STRP-DOZE": "https://www.pling.com/p/1888679/",
+        "STRP-PURE-GAMING": "https://www.pling.com/p/1895632/",
+        "STRP-UNLOCKER": "https://www.pling.com/p/1797235/",
+        "STRP-ADBLOCK": "https://www.pling.com/p/1844381/",
+        "STRP-PING-STABILIZER": "https://www.pling.com/p/1851753/",
+        "STRP-MENU": "https://www.pling.com/p/1930256/",
+        "STRP-TWEAKER-APP": "https://www.pling.com/p/1925406/",
+        "STRP-BOLT": "https://www.pling.com/p/1888683/",
+        "STRP-MIUI-ENHANCER": "https://www.pling.com/p/1918601/",
+        "STRP-LOW-END": "https://www.pling.com/p/1905472/",
+        "STRP-NEW-STATE": "https://www.pling.com/p/1882173/",
+        "STRP-EXYNOS": "https://www.pling.com/p/1881440/",
+        "STRP-CODM": "https://www.pling.com/p/1844377/",
+        "STRP-THERMAL": "https://www.pling.com/p/1850657/",
+        "STRP-PUBG": "https://www.pling.com/p/1840921/",
+        "STRP-SPOOFER": "https://www.pling.com/p/1856048/",
+        "STRP-SRC": "https://www.pling.com/p/1778961/",
+        "STRP-ZRAM": "https://www.pling.com/p/1834845/",
+        "STRP-YTR": "https://www.pling.com/p/1953846/",
+        "STRP-GROUP": "https://t.me/AndroidRootModulesCommunity",
+        "STRP-CHANNEL": "https://t.me/StratospherePerformance"
+      };
+
+      var redirectUrl = redirects[hash];
+      
+      if (redirectUrl) {
+        window.location.href = redirectUrl;
+      } else {
+        // Handle case where the hash doesn't match any redirects
+        console.log("No redirect found for the given hash:", hash);
+      }
+    }
+  </script>
   </head>
   <body class="show-splash">
     <div class="splash-screen" id="splashScreen">
@@ -176,4 +223,4 @@
 </div>
     </section>
   </body>
-</html>
+  </html> 
