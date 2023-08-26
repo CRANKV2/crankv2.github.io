@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/functions.js"></script>
         <title>STRP Magisk Modules</title>
+    <script>
+    window.onload = function() {
+      var imageElements = document.querySelectorAll('.image');
+
+      imageElements.forEach(function(imageElement) {
+        var imagePath = imageElement.getAttribute('src');
+        var linkElement = imageElement.parentElement;
+
+        if (imagePath && linkElement) {
+          if (imagePath.includes('./img/')) {
+            var imageName = imagePath.split('/').pop().replace('.png', '');
+            var redirectLink = linkElement.getAttribute('href');
+
+            if (redirectLink) {
+              linkElement.setAttribute('href', redirectLink + '#' + imageName);
+            }
+          }
+        }
+      });
+    };
+  </script>
   </head>
   <body class="show-splash">
     <div class="splash-screen" id="splashScreen">
