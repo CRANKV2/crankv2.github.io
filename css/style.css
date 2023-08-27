@@ -172,29 +172,33 @@ text-align: center; /* Center the text horizontally */
 
 
 /* Style the image container */
-.header_library .library-box {
+ .header_library .library-box {
   position: relative;
-  width: 140px; /* Reduce the width by 30% */
-  height: 140px; /* Reduce the height by 30% */
-  margin: 30px; /* Adjust the margin as needed for spacing between images */
+  width: 100%; /* Change to 100% to make it responsive */
+  padding-bottom: 100%; /* Maintain a square aspect ratio */
+  margin: 2%; /* Adjust the margin for spacing between images */
   background-color: transparent; /* Set the background color to transparent */
-}
-
-
-.header_library .library-box:nth-child(3) {
-  width: 100%;
 }
 
 .header_library .library-box img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 40%;
-  height: 40%;
+  width: 100%; /* Make the image responsive */
+  height: 100%; /* Make the image responsive */
   object-fit: cover;
   box-shadow: 0 0 10px 3px var(--cl-gold); /* Add the gold shadow */
-border-radius: 15px; /* Adjust the value to round the button corners */
+  border-radius: 15px; /* Adjust the value to round the image corners */
 }
+
+@media (min-width: 768px) {
+  /* Apply styles for screens wider than 768px */
+  .header_library .library-box {
+    width: calc(33.33% - 4%); /* 3 images per row with spacing */
+    padding-bottom: calc(33.33% - 4%); /* Maintain a square aspect ratio */
+  }
+}
+
 
 /* Style the logo icon */
 .logo_icon img {
